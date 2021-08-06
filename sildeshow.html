@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silder Show</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #313131;
+      }
+      .slider {
+        width: 900px;
+        height: 500px;
+        background: url(https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_960_720.jpg);
+        margin: 100px auto;
+        animation: slide 40s infinite;
+      }
+      @keyframes slide {
+        25% {
+          background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg);
+        }
+        50% {
+          background: url(https://cdn.pixabay.com/photo/2018/10/05/14/39/sunset-3726030_960_720.jpg);
+        }
+        75% {
+          background: url(https://cdn.pixabay.com/photo/2018/12/15/02/53/flowers-3876195_960_720.jpg);
+        }
+        100% {
+          background: url(https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider"></div>
+  </body>
+</html>
